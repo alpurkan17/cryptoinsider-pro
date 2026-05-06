@@ -170,7 +170,7 @@ app.get('/healthz', (req, res) => {
 // llms.txt proxy for UpRock AI Sitemap verification
 app.get('/llms.txt', async (req, res) => {
   try {
-    const response = await fetch('https://cdn.aisitemap.ai/anyclaw-store/llms.txt')
+    const response = await fetch('https://cdn.aisitemap.ai/cryptoinsider-pro-vercel-app/llms.txt')
     if (!response.ok) return res.status(502).send('Failed to fetch llms.txt')
     const content = await response.text()
     res.setHeader('Content-Type', 'text/plain; charset=utf-8')
