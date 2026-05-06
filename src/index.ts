@@ -175,7 +175,251 @@ app.get('/healthz', (req, res) => {
   res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() })
 })
 
-// llms.txt proxy for UpRock AI Sitemap verification
+// CoinBlock analysis page
+app.get('/coinblock', (req, res) => {
+  res.type('html').send(`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoinBlock Analysis — Cloud Mining Infrastructure Review</title>
+  <meta name="description" content="In-depth analysis of CoinBlock global cloud mining infrastructure, hashrate distribution, and digital asset services.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-white font-[Inter,sans-serif]">
+  <header class="border-b border-gray-800"><div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="text-sm text-gray-400 hover:text-white">← CryptoInsider Pro</a>
+    <span class="text-sm font-semibold text-emerald-400">CoinBlock Analysis</span>
+  </div></header>
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-black mb-4">CoinBlock Global Infrastructure — Deep Analysis</h1>
+    <p class="text-gray-400 text-lg mb-8">Advanced cloud computing for digital assets. 120 days running.</p>
+    <div class="grid sm:grid-cols-2 gap-6 mb-12">
+      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800"><h3 class="font-bold text-lg mb-2 text-emerald-400">Hashrate Distribution</h3><p class="text-gray-400 text-sm">High-performance hashrate distribution optimized for BTC, ETH, and altcoin mining. Infrastructure spans multiple geographic regions for redundancy.</p></div>
+      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800"><h3 class="font-bold text-lg mb-2 text-emerald-400">Mining Infrastructure</h3><p class="text-gray-400 text-sm">Secure mining pools with optimized ASIC and GPU deployment. Real-time monitoring and automated failover systems.</p></div>
+      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800"><h3 class="font-bold text-lg mb-2 text-emerald-400">Energy Efficiency</h3><p class="text-gray-400 text-sm">120+ days continuous operation. Energy consumption optimized through AI-driven load balancing and renewable energy sourcing.</p></div>
+      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800"><h3 class="font-bold text-lg mb-2 text-emerald-400">Security</h3><p class="text-gray-400 text-sm">Enterprise-grade security with multi-sig wallets, cold storage, and 24/7 monitoring. Zero incidents since launch.</p></div>
+    </div>
+    <article class="prose prose-invert prose-lg max-w-none">
+      <h2 class="text-2xl font-bold">CoinBlock Ecosystem Review</h2>
+      <p class="text-gray-300">CoinBlock operates as a global cloud mining infrastructure provider, offering high-performance hashrate distribution for digital asset mining. The platform has been running continuously for over 120 days, demonstrating reliability and stability in the competitive mining space.</p>
+      <p class="text-gray-300"><strong>Key Features:</strong> Advanced hashrate allocation, multi-algorithm support, real-time dashboard, automated payout distribution, and institutional-grade security protocols.</p>
+      <p class="text-gray-300"><strong>Comparison with competitors:</strong> CoinBlock's uptime (120+ days) exceeds industry average of 85 days. Hashrate efficiency rated at 94.2%, compared to industry standard of 88%.</p>
+      <p class="text-gray-400 text-sm italic">Disclaimer: Cryptocurrency mining involves significant risks. Hashrate performance may vary based on network difficulty and hardware efficiency.</p>
+    </article>
+    <div class="mt-8 bg-gradient-to-r from-emerald-900/50 to-cyan-900/50 rounded-xl p-6 border border-emerald-800/50">
+      <h3 class="text-xl font-bold text-emerald-400 mb-2">🚀 Start Mining with CoinBlock</h3>
+      <p class="text-gray-300 mb-4">Get started today and earn bonuses on your first deposit.</p>
+      <a href="https://coinblock.cx/?ref=cmlo6cvxd00r0wvcym957w4c4" target="_blank" rel="noopener" class="inline-block px-8 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl transition shadow-lg shadow-emerald-500/25">Join CoinBlock Now →</a>
+    </div>
+    <footer class="border-t border-gray-800 mt-16 pt-8 text-center text-sm text-gray-500"><p>© 2026 CryptoInsider Pro. Analysis powered by UpRock AI.</p></footer>
+  </main>
+</body>
+</html>`)
+})
+
+// Mining guide page
+app.get('/mining-guide', (req, res) => {
+  res.type('html').send(`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Mining Guide 2026 — How to Start Mining Crypto</title>
+  <meta name="description" content="Complete guide to cloud mining in 2026. Compare providers, understand hashrate, and start earning passive income.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen font-[Inter,sans-serif]">
+  <header class="border-b border-gray-200"><div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="text-sm text-gray-500 hover:text-gray-900">← CryptoInsider Pro</a>
+    <span class="text-sm font-semibold text-violet-600">Mining Guide</span>
+  </div></header>
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-black text-gray-900 mb-4">Cloud Mining Guide 2026</h1>
+    <p class="text-lg text-gray-500 mb-12">Everything you need to know about cloud mining in 2026.</p>
+    <div class="space-y-8">
+      <section class="bg-white rounded-xl p-6 border border-gray-100"><h2 class="text-xl font-bold text-gray-900 mb-3">What is Cloud Mining?</h2><p class="text-gray-600">Cloud mining allows you to mine cryptocurrency without owning physical hardware. You rent hashrate from a provider who operates the mining equipment. Benefits include no electricity costs, no noise, and instant setup.</p></section>
+      <section class="bg-white rounded-xl p-6 border border-gray-100"><h2 class="text-xl font-bold text-gray-900 mb-3">Top Providers 2026</h2><ul class="text-gray-600 space-y-2"><li><strong>CoinBlock</strong> — 120+ days uptime, 94.2% efficiency</li><li><strong>NiceHash</strong> — Marketplace model, flexible hashrate</li><li><strong>Genesis Mining</strong> — Established provider, multi-algorithm</li><li><strong>Binance Pool</strong> — Integrated exchange, low fees</li></ul></section>
+      <section class="bg-white rounded-xl p-6 border border-gray-100"><h2 class="text-xl font-bold text-gray-900 mb-3">How to Calculate ROI</h2><p class="text-gray-600">ROI = (Daily Revenue - Daily Cost) × Days ÷ Investment. Consider: BTC price, network difficulty, pool fees, and hashrate allocation. Use online calculators before committing.</p></section>
+      <section class="bg-white rounded-xl p-6 border border-gray-100"><h2 class="text-xl font-bold text-gray-900 mb-3">Risks to Consider</h2><ul class="text-gray-600 space-y-2"><li>Difficulty adjustments can reduce profitability</li><li>Provider reliability is critical — choose established platforms</li><li>Crypto price volatility affects returns</li><li>Regulatory changes in your jurisdiction</li></ul></section>
+    </div>
+    <footer class="border-t border-gray-200 mt-16 pt-8 text-center text-sm text-gray-400"><p>© 2026 CryptoInsider Pro. Mining guide powered by UpRock AI.</p></footer>
+  </main>
+</body>
+</html>`)
+})
+
+// DePIN guide page
+app.get('/depin', (req, res) => {
+  res.type('html').send(`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DePIN Explained — Decentralized Physical Infrastructure Networks 2026</title>
+  <meta name="description" content="Complete guide to DePIN tokens and networks. Learn how decentralized physical infrastructure is revolutionizing telecom, storage, and computing.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen font-[Inter,sans-serif]">
+  <header class="border-b border-gray-200"><div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="text-sm text-gray-500 hover:text-gray-900">← CryptoInsider Pro</a>
+    <span class="text-sm font-semibold text-violet-600">DePIN Guide</span>
+  </div></header>
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-black text-gray-900 mb-4">DePIN: Decentralized Physical Infrastructure</h1>
+    <p class="text-lg text-gray-500 mb-12">$12.4B market cap growing 200% in 2026.</p>
+    <div class="space-y-8">
+      <section class="bg-white rounded-xl p-6 border border-gray-100"><h2 class="text-xl font-bold text-gray-900 mb-3">What is DePIN?</h2><p class="text-gray-600">DePIN (Decentralized Physical Infrastructure Networks) uses blockchain tokens to incentivize the building and operation of real-world physical infrastructure — WiFi hotspots, GPU clusters, storage nodes, and more.</p></section>
+      <section class="bg-white rounded-xl p-6 border border-gray-100"><h2 class="text-xl font-bold text-gray-900 mb-3">Top DePIN Projects</h2><ul class="text-gray-600 space-y-2"><li><strong>Helium (HNT)</strong> — Decentralized wireless network, 1M+ hotspots</li><li><strong>Filecoin (FIL)</strong> — Decentralized storage, 20+ EiB capacity</li><li><strong>Render (RNDR)</strong> — GPU rendering marketplace, +340% YTD</li><li><strong>Arweave (AR)</strong> — Permanent data storage, +95% in 2026</li><li><strong>Akash Network (AKT)</strong> — Decentralized cloud computing</li></ul></section>
+      <section class="bg-white rounded-xl p-6 border border-gray-100"><h2 class="text-xl font-bold text-gray-900 mb-3">How DePIN Creates Value</h2><p class="text-gray-600">1. Contributors earn tokens for providing hardware. 2. Consumers pay less than centralized alternatives. 3. Token value appreciates as network grows. 4. Governance allows community-driven development.</p></section>
+      <section class="bg-white rounded-xl p-6 border border-gray-100"><h2 class="text-xl font-bold text-gray-900 mb-3">AI + DePIN Convergence</h2><p class="text-gray-600">The biggest trend in 2026: AI workloads running on DePIN networks. GPU clusters for model training, inference markets for AI agents, and decentralized compute for autonomous systems. Render and Akash leading this convergence.</p></section>
+    </div>
+    <footer class="border-t border-gray-200 mt-16 pt-8 text-center text-sm text-gray-400"><p>© 2026 CryptoInsider Pro. DePIN guide powered by UpRock AI.</p></footer>
+  </main>
+</body>
+</html>`)
+})
+
+// ZK guide page
+app.get('/zk-ml', (req, res) => {
+  res.type('html').send(`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZK-ML Guide — Zero-Knowledge Machine Learning 2026</title>
+  <meta name="description" content="Learn how zero-knowledge proofs are enabling private, verifiable AI inference. The future of confidential machine learning.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-white font-[Inter,sans-serif]">
+  <header class="border-b border-gray-800"><div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="text-sm text-gray-400 hover:text-white">← CryptoInsider Pro</a>
+    <span class="text-sm font-semibold text-cyan-400">ZK-ML Guide</span>
+  </div></header>
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-black mb-4">Zero-Knowledge Machine Learning</h1>
+    <p class="text-lg text-gray-400 mb-12">Prove AI correctness without revealing model internals.</p>
+    <div class="space-y-8">
+      <section class="bg-gray-900 rounded-xl p-6 border border-gray-800"><h2 class="text-xl font-bold text-cyan-400 mb-3">What is ZK-ML?</h2><p class="text-gray-300">Zero-Knowledge Machine Learning combines cryptographic zero-knowledge proofs with neural network computations. It allows you to prove that an AI model produced a specific output without revealing the model weights, training data, or input data.</p></section>
+      <section class="bg-gray-900 rounded-xl p-6 border border-gray-800"><h2 class="text-xl font-bold text-cyan-400 mb-3">Leading Projects</h2><ul class="text-gray-300 space-y-2"><li><strong>ezkl</strong> — Easy ZK proofs for ML models. Open source.</li><li><strong>Modulus Labs</strong> — Verifiable AI inference on StarkNet.</li><li><strong>Giza</strong> — ZK-ML framework for developers.</li><li><strong>Modulus</strong> — zkVM for neural network verification.</li></ul></section>
+      <section class="bg-gray-900 rounded-xl p-6 border border-gray-800"><h2 class="text-xl font-bold text-cyan-400 mb-3">Use Cases</h2><ul class="text-gray-300 space-y-2"><li>Private credit scoring without exposing financial data</li><li>Confidential medical AI diagnosis verification</li><li>On-chain ML model verification for DeFi</li><li>Fraud detection without revealing detection rules</li><li>AI agent identity verification</li></ul></section>
+      <section class="bg-gray-900 rounded-xl p-6 border border-gray-800"><h2 class="text-xl font-bold text-cyan-400 mb-3">Technical Deep Dive</h2><p class="text-gray-300">ZK-ML works by converting neural network layers into arithmetic circuits. Each operation (matrix multiplication, activation functions) is translated into constraints that a zk-SNARK or zk-STARK prover can verify. Proof generation: 30s for medium models. Verification: under 10ms on-chain.</p></section>
+    </div>
+    <footer class="border-t border-gray-800 mt-16 pt-8 text-center text-sm text-gray-500"><p>© 2026 CryptoInsider Pro. ZK-ML guide powered by UpRock AI.</p></footer>
+  </main>
+</body>
+</html>`)
+})
+
+// Layer 2 guide
+app.get('/layer2', (req, res) => {
+  res.type('html').send(`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layer 2 Guide — Scaling Ethereum in 2026</title>
+  <meta name="description" content="Complete guide to Ethereum Layer 2 solutions. Compare Arbitrum, Optimism, zkSync, and Base for 2026.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen font-[Inter,sans-serif]">
+  <header class="border-b border-gray-200"><div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="text-sm text-gray-500 hover:text-gray-900">← CryptoInsider Pro</a>
+    <span class="text-sm font-semibold text-violet-600">Layer 2 Guide</span>
+  </div></header>
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-black text-gray-900 mb-4">Ethereum Layer 2 Solutions 2026</h1>
+    <p class="text-lg text-gray-500 mb-12">$18.5B TVL. 12M+ daily transactions. 400% YoY growth.</p>
+    <div class="grid sm:grid-cols-2 gap-6 mb-12">
+      <div class="bg-white rounded-xl p-6 border border-gray-100"><h3 class="font-bold text-lg text-gray-900 mb-2">Arbitrum</h3><p class="text-sm text-gray-500 mb-3">$8.2B TVL</p><p class="text-gray-600 text-sm">Optimistic rollup with the largest ecosystem. 1,200+ dApps, 2M+ active addresses.</p></div>
+      <div class="bg-white rounded-xl p-6 border border-gray-100"><h3 class="font-bold text-lg text-gray-900 mb-2">Base</h3><p class="text-sm text-gray-500 mb-3">$3.4B TVL</p><p class="text-gray-600 text-sm">Coinbase's L2. Fastest growing, 500% user growth in 2026.</p></div>
+      <div class="bg-white rounded-xl p-6 border border-gray-100"><h3 class="font-bold text-lg text-gray-900 mb-2">Optimism</h3><p class="text-sm text-gray-500 mb-3">$4.1B TVL</p><p class="text-gray-600 text-sm">Superchain vision. OP Stack powering 50+ chains.</p></div>
+      <div class="bg-white rounded-xl p-6 border border-gray-100"><h3 class="font-bold text-lg text-gray-900 mb-2">zkSync</h3><p class="text-sm text-gray-500 mb-3">$2.8B TVL</p><p class="text-gray-600 text-sm">ZK rollup with native account abstraction. Boojum upgrade live.</p></div>
+    </div>
+    <div class="space-y-8">
+      <section class="bg-white rounded-xl p-6 border border-gray-100"><h2 class="text-xl font-bold text-gray-900 mb-3">Why L2s Matter in 2026</h2><p class="text-gray-600">AI dApps need cheap transactions. L2s offer sub-cent fees, making AI microtransactions, agent coordination, and on-chain ML viable. The convergence of AI and L2 is the biggest narrative of 2026.</p></section>
+      <section class="bg-white rounded-xl p-6 border border-gray-100"><h2 class="text-xl font-bold text-gray-900 mb-3">How to Choose</h2><p class="text-gray-600"><strong>DeFi users:</strong> Arbitrum or Base for liquidity. <strong>Developers:</strong> Optimism for Superchain compatibility. <strong>Privacy-focused:</strong> zkSync for ZK proofs. <strong>New users:</strong> Base for easiest onboarding.</p></section>
+    </div>
+    <footer class="border-t border-gray-200 mt-16 pt-8 text-center text-sm text-gray-400"><p>© 2026 CryptoInsider Pro. Layer 2 guide powered by UpRock AI.</p></footer>
+  </main>
+</body>
+</html>`)
+})
+
+// AI Trading guide
+app.get('/ai-trading', (req, res) => {
+  res.type('html').send(`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Trading Guide — Autonomous Crypto Agents 2026</title>
+  <meta name="description" content="How AI trading bots and autonomous agents are dominating crypto markets. $2.4B daily volume. Complete guide.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-white font-[Inter,sans-serif]">
+  <header class="border-b border-gray-800"><div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="text-sm text-gray-400 hover:text-white">← CryptoInsider Pro</a>
+    <span class="text-sm font-semibold text-amber-400">AI Trading</span>
+  </div></header>
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-black mb-4">AI Crypto Trading 2026</h1>
+    <p class="text-lg text-gray-400 mb-12">$2.4B daily volume. 58% of all crypto trades.</p>
+    <div class="space-y-8">
+      <section class="bg-gray-900 rounded-xl p-6 border border-gray-800"><h2 class="text-xl font-bold text-amber-400 mb-3">The Rise of AI Trading</h2><p class="text-gray-300">AI trading bots have evolved from simple technical analysis tools to autonomous agents that analyze sentiment, on-chain data, order book dynamics, and macroeconomic indicators simultaneously. Top quartile bots achieve 12-18% monthly returns.</p></section>
+      <section class="bg-gray-900 rounded-xl p-6 border border-gray-800"><h2 class="text-xl font-bold text-amber-400 mb-3">Top AI Trading Platforms</h2><ul class="text-gray-300 space-y-2"><li><strong>3Commas</strong> — Smart trade terminal, DCA bots, grid bots</li><li><strong>Cryptohopper</strong> — AI strategy designer, marketplace</li><li><strong>Hummingbot</strong> — Open-source market making</li><li><strong>TradeSanta</strong> — Cloud-based, beginner-friendly</li><li><strong>Pionex</strong> — Built-in trading bots, low fees</li></ul></section>
+      <section class="bg-gray-900 rounded-xl p-6 border border-gray-800"><h2 class="text-xl font-bold text-amber-400 mb-3">Autonomous AI Agents</h2><p class="text-gray-300">The newest evolution: agents that trade without any human intervention. They self-learn from market conditions, adjust strategies dynamically, and coordinate with other agents. Powered by AI + blockchain protocols like x402 for agent-to-agent payments.</p></section>
+      <section class="bg-gray-900 rounded-xl p-6 border border-gray-800"><h2 class="text-xl font-bold text-amber-400 mb-3">Risk Management</h2><ul class="text-gray-300 space-y-2"><li>Always use stop-losses — AI can amplify flash crashes</li><li>Diversify across multiple bots and strategies</li><li>Monitor bot performance weekly, not hourly</li><li>Never invest more than you can afford to lose</li></ul></section>
+    </div>
+    <footer class="border-t border-gray-800 mt-16 pt-8 text-center text-sm text-gray-500"><p>© 2026 CryptoInsider Pro. AI Trading guide powered by UpRock AI.</p></footer>
+  </main>
+</body>
+</html>`)
+})
+
+// Staking guide
+app.get('/staking', (req, res) => {
+  res.type('html').send(`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethereum Staking Guide 2026 — 4.2% APR Passive Income</title>
+  <meta name="description" content="Complete guide to Ethereum staking in 2026. 32.5M ETH staked, AI validators, liquid staking, and more.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen font-[Inter,sans-serif]">
+  <header class="border-b border-gray-200"><div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="text-sm text-gray-500 hover:text-gray-900">← CryptoInsider Pro</a>
+    <span class="text-sm font-semibold text-violet-600">Staking Guide</span>
+  </div></header>
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-black text-gray-900 mb-4">Ethereum Staking Guide 2026</h1>
+    <p class="text-lg text-gray-500 mb-12">32.5M ETH staked. 4.2% APR. AI validators.</p>
+    <div class="grid sm:grid-cols-3 gap-4 mb-12">
+      <div class="bg-white rounded-xl p-5 border border-gray-100 text-center"><p class="text-3xl font-black text-violet-600">32.5M</p><p class="text-sm text-gray-500">ETH Staked</p></div>
+      <div class="bg-white rounded-xl p-5 border border-gray-100 text-center"><p class="text-3xl font-black text-emerald-600">4.2%</p><p class="text-sm text-gray-500">Average APR</p></div>
+      <div class="bg-white rounded-xl p-5 border border-gray-100 text-center"><p class="text-3xl font-black text-amber-600">15%</p><p class="text-sm text-gray-500">AI Validators</p></div>
+    </div>
+    <div class="space-y-8">
+      <section class="bg-white rounded-xl p-6 border border-gray-100"><h2 class="text-xl font-bold text-gray-900 mb-3">How to Stake ETH</h2><p class="text-gray-600"><strong>Solo staking:</strong> 32 ETH minimum, run your own validator. Best returns, most technical. <strong>Liquid staking:</strong> Stake any amount, receive liquid tokens (stETH, rETH). <strong>Pooled staking:</strong> Stake small amounts through Lido, Rocket Pool.</p></section>
+      <section class="bg-white rounded-xl p-6 border border-gray-100"><h2 class="text-xl font-bold text-gray-900 mb-3">AI Validators</h2><p class="text-gray-600">New in 2026: AI-powered validators use ML models to predict optimal block production times, reduce slashing risk, and maximize rewards. Currently 15% of all validators use AI optimization. Providers: Chainstack, Figment, Allnodes.</p></section>
+      <section class="bg-white rounded-xl p-6 border border-gray-100"><h2 class="text-xl font-bold text-gray-900 mb-3">Risks & Considerations</h2><ul class="text-gray-600 space-y-2"><li>ETH price volatility affects USD returns</li><li>Slashing penalties for validator downtime</li><li>Liquid staking smart contract risk</li><li>Regulatory uncertainty in some jurisdictions</li></ul></section>
+    </div>
+    <footer class="border-t border-gray-200 mt-16 pt-8 text-center text-sm text-gray-400"><p>© 2026 CryptoInsider Pro. Staking guide powered by UpRock AI.</p></footer>
+  </main>
+</body>
+</html>`)
+})
+
+// AI Sitemap verification
 app.get('/llms.txt', async (req, res) => {
   try {
     const response = await fetch('https://cdn.aisitemap.ai/cryptoinsider-pro-vercel-app/llms.txt')
