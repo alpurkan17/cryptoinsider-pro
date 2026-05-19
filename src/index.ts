@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 </head>
 <body class="bg-[#e8e8ed] min-h-screen">
   <div id="app">
-    <div class="bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 text-white overflow-hidden">
+    <div class="bg-gray-900 text-white overflow-hidden">
       <div class="ticker-scroll whitespace-nowrap py-2 text-sm font-medium flex gap-12 items-center">
         <span class="flex items-center gap-2"><span class="bg-white/20 px-1.5 py-0.5 rounded text-xs font-bold">BTC</span> $81,286 ▲2.3%</span>
         <span class="flex items-center gap-2"><span class="bg-white/20 px-1.5 py-0.5 rounded text-xs font-bold">ETH</span> $2,400 ▲1.5%</span>
